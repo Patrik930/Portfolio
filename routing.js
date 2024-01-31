@@ -10,7 +10,7 @@ const routes = {
     domObj.innerHTML = html;
   };
 
-  let obj = document.querySelector(".content");
+let obj = document.querySelector(".content");
   loadPage("home.html", obj);
 
   window.addEventListener("hashchange", () => {

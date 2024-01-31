@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+
+body{
+    margin: 0;
+}
+.panels{
+    min-height: 50vh;
+    display: flex;
+    box-sizing: border-box;
+    font-family: 'Honk', system-ui;
+    font-size: 3rem;
+}
+.panel{
+    flex:1;
+    background-color: blueviolet;
+    box-shadow: 0 0 10px gray;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    transition: flex 0.7s cubic-bezier(.17,.67,.81,.08);
+}
+.open{
+    flex:5
+}
