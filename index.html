@@ -9,10 +9,12 @@
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <script defer src="routing.js"></script>
+    <link rel="stylesheet" href="panels.css">
+    
     <title>Portfólió</title>
     <style>
       body {
+        background-image: url('https://source.unsplash.com/the-night-sky-is-filled-with-stars-Q_RBVFFXR_g');
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
@@ -57,7 +59,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="home.html">Home</a>
+          <a class="navbar-brand" href="#/">Home</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -72,11 +74,15 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                <a class="nav-link active" aria-current="page" href="#/about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/contact.html">Contact</a>
+                <a class="nav-link" href="#/projects">Projects</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#/contact">Contact</a>
+              </li>
+              
           </div>
         </div>
       </nav>
@@ -84,5 +90,6 @@
       <div class="content"></div>
       </div>
     </div>
+    <script  type="module" src="routing.js"></script>
   </body>
 </html>

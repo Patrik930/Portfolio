@@ -1,13 +1,24 @@
+
+import {about} from "./about.js" 
+import {projects} from "./projects.js" 
+
 const routes = {
     "": "home.html",
     'about': "about.html",
     'contact': "contact.html",
+    'projects':'projects.html'
   };
 
   const loadPage = async (url, domObj) => {
     const response = await fetch(url);
     const html = await response.text();
     domObj.innerHTML = html;
+    if(url=='about.html'){
+      about()
+    }
+    if(url=='projects.html'){
+      projects()
+    }
   };
 
 let obj = document.querySelector(".content");

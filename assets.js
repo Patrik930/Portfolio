@@ -9,3 +9,9 @@ export const panelBackgrounds = [
     'https://source.unsplash.com/a-white-sports-car-driving-down-a-street-next-to-a-tall-building-uaFwD_Gc0hM/1500x1500&#39'
 
 ];
+
+export const getData=async (url,renderFc)=>{
+    const response=await fetch(url)
+    const data=await response.json()
+    renderFc(data)
+}
