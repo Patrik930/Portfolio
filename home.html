@@ -1,13 +1,22 @@
 
 <style>
+body{
+    background: linear-gradient(to right, #0000FF,#FFFF00 );
+}
 #container
 {
-    margin: 150px 0px 0px 400px;
+    /* margin: 150px 0px 0px 400px; */
     text-align: left;
-	position: fixed;
     color: white;
     font-size: 24pt;
     font-family: monospace;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 900px) {
+ .mid{
+    flex-direction: column;
+ }
 }
 .title-block
 {
@@ -15,7 +24,7 @@
     text-align: left;
 	color: #00b4ff;
     font-family: monospace;
-	font-size: 24pt;
+	font-size: 35pt;
 }
 .text-block
 {
@@ -24,7 +33,8 @@
     text-align: left;
     color: white;
     font-family: monospace;
-    font-size: 16pt;
+    font-size: 25pt;
+
 }
 a
 {
@@ -38,22 +48,46 @@ li
 
 .home {
   background-color: #a3d5d3;
+  
 }
+img{    
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  max-width: 300px;
+  height: auto;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+}
+
 </style>
 
 	
           
-    
-    <div class="home" id = "container">
-        <div class = "title-block">
-            Portfólió
-			<hr style = "width: 100%; height: 2px; background-color: white; border-radius: 2px; margin: 0px 0px 5px 0px;">
+    <body>
+        <div class="home" id = "container">
+           <div class="mid">
+                <div>
+                    <img src="profilkep.jpg" alt="Profilkép" class="img-fluid">
+                </div>
+                <div>
+                    <div class = "title-block">
+                        Portfólió
+                        <hr style = "width: 100%; height: 2px; background-color: white; border-radius: 2px; margin: 0px 0px 5px 0px;">
+                    </div>
+                    <div class = "text-block">
+                        <span style = "color: #00b4ff"><em> Rácz Patrik </em></span> <br>
+                        Kecskemét <br>
+                        Tanuló at  <a href = "https://kkando.hu/" target="_blank">Kandó Elit</a> <br>		
+                    </div>
+                </div>
+               
+           </div>
         </div>
-        <div class = "text-block">
-			<span style = "color: #00b4ff"><em> Rácz Patrik </em></span> <br>
-            Kecskemét <br>
-            Tanuló at  <a href = "https://kkando.hu/" target="_blank">Kandó Elit</a> <br>		
-        </div>
-    </div>
+    </body>
+   
 
+    
 

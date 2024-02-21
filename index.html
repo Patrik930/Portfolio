@@ -14,21 +14,20 @@
     
     <title>Portfólió</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f0f0f0;
-      }
-
+    
       .container {
         margin: 20px auto;
         padding: 20px;
-        background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       }
-
+      nav{
+        background: linear-gradient(to right, #008000, 	#d01d9b);
+      }
+      .tcolor{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+      }
       
     </style>
   </head>
@@ -37,40 +36,41 @@
 
 
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#/">Home</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+    <header>
+      <div class="container-fluid">
+
+      
+      <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#/about">About</a>
+                <a class="nav-link active tcolor" aria-current="page" href="#/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#/projects">Projects</a>
+                <a class="nav-link active tcolor" aria-current="page" href="#/about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#/contact">Contact</a>
+                <a class="nav-link tcolor" href="#/projects">Projects</a>
               </li>
-              
+              <li class="nav-item">
+                <a class="nav-link tcolor" href="#/contact">Contact</a>
+              </li>
+            </ul>
           </div>
-        </div>
       </nav>
+    </div>
+    </header>
+    
+    <div class="container">
 
       <div class="content"></div>
       </div>
     </div>
     <script  type="module" src="routing.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>
 </html>
